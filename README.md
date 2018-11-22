@@ -1,7 +1,6 @@
 # OpenAI_Lunar_Lander
-This repository contains information relating to experiments on Proximal Policy Optimization algorithm performance in the OpenAI LunarLander gym environment.
-
-I am running experiements in the OpenAI LunarLander-v2 enviornment. 
+This repository contains information relating to experiments on Proximal Policy Optimization algorithm performance in the OpenAI gym LunarLander-v2 environment.
+ 
 The experiments test and record the performance of various differentiations of OpenAI's open source code for deep reinforcement learning algorithms.
 
 
