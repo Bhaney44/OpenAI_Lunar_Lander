@@ -1,0 +1,264 @@
+#LunarLandarExperiments
+
+#Experiment 1
+
+python -m spinup.run ppo --exp_name LunarLander3 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Experiment 2
+#lower clip_ratio to 0.1
+
+python -m spinup.run ppo --exp_name LunarLander4 --env LunarLander-v2 --clip_ratio 0.1 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Experiment 3
+#raise clip_ratio to 0.3
+
+python -m spinup.run ppo --exp_name LunarLander5 --env LunarLander-v2 --clip_ratio 0.3 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Best clip_ratio = 0.2
+
+#Experiment 4
+#change game to 0.8
+
+python -m spinup.run ppo --exp_name LunarLander6 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.8 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+#Experiment 5
+#Change --hid to 12,12
+
+python -m spinup.run ppo --exp_name LunarLander7 --env LunarLander-v2 --clip_ratio 0.2 --hid "[12,12]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+#Experiment 6
+#Change --hid to 40,40
+
+python -m spinup.run ppo --exp_name LunarLander8 --env LunarLander-v2 --clip_ratio 0.2 --hid "[40,40]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Not too bad
+#Similar performance to LL3
+
+#Experiment 7
+#Change --hid to 40,32
+
+python -m spinup.run ppo --exp_name LunarLander9 --env LunarLander-v2 --clip_ratio 0.2 --hid "[40,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+#Experiment 8
+#Change --hid to 32,40
+
+python -m spinup.run ppo --exp_name LunarLander10 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,40]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#avg
+
+#Experiment 9
+#raise clip_ratio to 0.25
+
+python -m spinup.run ppo --exp_name LunarLander11 --env LunarLander-v2 --clip_ratio 0.25 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#avg
+
+#Experiment 10
+#lower clip ratio to 0.15
+
+python -m spinup.run ppo --exp_name LunarLander12 --env LunarLander-v2 --clip_ratio 0.15 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+
+#Experiment 11
+#changed --hid to random numbers 17,50
+
+python -m spinup.run ppo --exp_name LunarLander13 --env LunarLander-v2 --clip_ratio 0.2 --hid "[17,50]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+#Experiment 12
+#changed --hid to random numbers 3,4
+
+python -m spinup.run ppo --exp_name LunarLander14 --env LunarLander-v2 --clip_ratio 0.2 --hid "[3,4]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#WorstAF
+
+
+#Experiment 13
+#changed clip_ratio to 0.22
+
+python -m spinup.run ppo --exp_name LunarLander15 --env LunarLander-v2 --clip_ratio 0.22 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#ntg
+
+#Experiment 14
+#changed clip_ratio to 0.21
+
+python -m spinup.run ppo --exp_name LunarLander16 --env LunarLander-v2 --clip_ratio 0.21 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#
+
+#Experiment 15
+#changed --hid to random numbers 128,32
+
+python -m spinup.run ppo --exp_name LunarLander17 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#ntg
+
+#Experiment 16
+#added --vf_lr 0.001 (learning rate for the value function) to code as baseline from documentation
+
+python -m spinup.run ppo --exp_name LunarLander18 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --vf_lr 0.001 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#ntg
+
+#Experiment 17
+#changed --vf_lr 0.002
+
+python -m spinup.run ppo --exp_name LunarLander19 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --vf_lr 0.002 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#good
+
+#Experiment 18
+#changed --vf_lr 0.0005
+
+python -m spinup.run ppo --exp_name LunarLander20 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --vf_lr 0.0005 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#
+
+#Experiment 19
+#changed --vf_lr 0.003
+
+python -m spinup.run ppo --exp_name LunarLander21 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --vf_lr 0.003 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#good rate of change bad outcome
+
+#Best vf_lr = .002
+#New standard vf_lr is .002
+
+#Experiment 20
+#changed --hid to 128,64
+
+python -m spinup.run ppo --exp_name LunarLander22 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.002 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Vgood rate near 150 at end
+#New standard --hid 128,64
+
+#Experiment 21
+#changed --vf_lr 0.0025
+
+python -m spinup.run ppo --exp_name LunarLander23 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0025 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#V good over 200 and dropped to 150ish
+
+#Experiment 22
+#changed --vf_lr 0.05
+
+python -m spinup.run ppo --exp_name LunarLander24 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.05 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#ntg
+
+#Experiment 23
+#changed --vf_lr 0.026
+
+python -m spinup.run ppo --exp_name LunarLander25 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0026 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#not as good as --vf_lr 0.025
+
+#Experiment 24
+#changed --vf_lr 0.0023
+
+python -m spinup.run ppo --exp_name LunarLander26 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0023 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#made that .0023 instead of .023 by accident
+
+#Experiment 25
+#changed --vf_lr 0.023
+
+python -m spinup.run ppo --exp_name LunarLander27 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.023 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#not as good as 0.025
+
+#Experiment 26
+#changed --vf_lr 0.0025
+
+python -m spinup.run ppo --exp_name LunarLander28 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0025 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#first result LL23 with this algorithm V good over 200 and dropped to 150ish
+#second result LL28 
+
+
+#Experiment 27
+#changed --vf_lr 0.0024
+
+python -m spinup.run ppo --exp_name LunarLander29 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#new standard --vf_lr = 0.24
+#Over 200 then dropped to 150
+
+#Experiment 28
+#changed seed to 0
+
+python -m spinup.run ppo --exp_name LunarLander30 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 0 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#avg
+#TestPolicy on 100 episodes...
+#python -m spinup.run test_policy /Users/brianhaney/Desktop/MoonLander/2018-11-22_LunarLander30/2018-11-22_10-09-09-LunarLander30_s0
+
+
+#Experiment 29
+#changed seed to 10
+
+python -m spinup.run ppo --exp_name LunarLander31 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 10 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#NTG
+
+#Experiment 30
+#changed seed to 20
+
+python -m spinup.run ppo --exp_name LunarLander32 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.002x --seed 20 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Error
+#Error = vf_lr 0.002x
+
+#Experiment 31
+#Corrected error from experiment 30
+
+python -m spinup.run ppo --exp_name LunarLander33 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Pretty good peak around 200 then drop
+
+#Experiment 32
+#changed seed to 25
+
+python -m spinup.run ppo --exp_name LunarLander34 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 25 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#up to 150 then crash
+#New Seed standard = 20
+
+#Experiment 33
+#added epochs 50
+
+python -m spinup.run ppo --exp_name LunarLander35 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#best yet finish around 200
+
+#Experiment 34
+#changed epochs 75
+
+python -m spinup.run ppo --exp_name LunarLander36 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 75 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Takes wayyy longer
+#Peaked at 200 then dropped rapidly
+
+#Experiment 35
+#changed epochs 55
+
+python -m spinup.run ppo --exp_name LunarLander37 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 55 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#
+
+#Experiment 36
+#changed epochs x AND changed path /Experiments
+
+python -m spinup.run ppo --exp_name LunarLander37 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 55 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+
