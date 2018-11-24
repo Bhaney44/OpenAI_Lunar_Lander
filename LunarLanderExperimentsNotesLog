@@ -448,6 +448,12 @@ python -m spinup.run ppo --exp_name LunarLander56 --env LunarLander-v2 --clip_ra
 
 #python -m spinup.run plot /Users/brianhaney/Desktop/MoonLander/Experiments/2018-11-23_LunarLander56/2018-11-23_17-44-31-LunarLander56_s20
 
+#Experiment 58
+
+python -m spinup.run ppo --exp_name LunarLander57 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 100 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+
+
 
 
 
