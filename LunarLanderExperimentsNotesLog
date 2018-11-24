@@ -1,5 +1,7 @@
 #LunarLandarExperiments
 
+#Proximal Policy Optimization
+
 #Experiment 1
 
 python -m spinup.run ppo --exp_name LunarLander3 --env LunarLander-v2 --clip_ratio 0.2 --hid "[32,32]" --gamma 0.999 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
@@ -254,11 +256,198 @@ python -m spinup.run ppo --exp_name LunarLander36 --env LunarLander-v2 --clip_ra
 
 python -m spinup.run ppo --exp_name LunarLander37 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 55 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
 
-#
+#ntg
 
 #Experiment 36
-#changed epochs x AND changed path /Experiments
+#changed epochs 40 AND changed path /Experiments
 
-python -m spinup.run ppo --exp_name LunarLander37 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 55 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+python -m spinup.run ppo --exp_name LunarLander38 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 40 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#good peak around 200
+
+#Experiment 37
+#changed epochs 10 20 30
+
+python -m spinup.run ppo --exp_name LunarLander39 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 10 20 30 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#Epochs New Standard 50
+
+#Experiment 38
+#change hid to 128,128
+
+python -m spinup.run ppo --exp_name LunarLander40 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,128]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+
+#Experiment 39
+#default from oss openAI pi_lr=0.0003 AND change hid to 128,128
+
+python -m spinup.run ppo --exp_name LunarLander41 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,128]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.0003 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#Avg
+#Return -hid to current default 128,64
+
+#Experiment 40
+#change pi_lr=0.0006
+
+python -m spinup.run ppo --exp_name LunarLander42 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.0006 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#
+
+#Experiment 41
+#change pi_lr=0.0002
+
+python -m spinup.run ppo --exp_name LunarLander43 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#good -really good - right around 200 avg
+
+#Experiment 42
+#change pi_lr=0.00025
+
+python -m spinup.run ppo --exp_name LunarLander44 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.00025 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+
+#Experiment 43
+#change pi_lr=0.0001
+
+python -m spinup.run ppo --exp_name LunarLander45 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.0001 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+
+
+#Experiment 44
+#change pi_lr=0.00015
+
+python -m spinup.run ppo --exp_name LunarLander46 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --epochs 50 --pi_lr 0.00015 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+#new default pi_lr=0.0002
+
+#Experiment 45
+#added default from open ai steps_per_epoch 4000
+
+python -m spinup.run ppo --exp_name LunarLander47 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4000 --epochs 50 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#good max 207 but inconsistent
+
+
+#Experiment 46
+#changed epochs to 45
+
+python -m spinup.run ppo --exp_name LunarLander48 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4000 --epochs 45 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+#default epoch still 50
+
+#Experiment 47
+#change steps_per_epoch 3500
+
+python -m spinup.run ppo --exp_name LunarLander49 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 3500 --epochs 50 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#avg high variance once over 200
+
+#Experiment 48
+#change steps_per_epoch 4500 4250 4750 3000 2000 5000
+
+python -m spinup.run ppo --exp_name LunarLander50 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4500 4250 4750 3000 2000 5000 --epochs 50 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+
+#Insanely long run time
+#4500 ntg
+#4250 ntg
+#4750 ntg
+#3000 ntg
+#2000 did not reach 200 but exponential up curve towards 200
+#5000 did not reach 200
+#New Default steps_per_epoch = 4000
+
+#Experiment 49
+#added max_ep_len=1000 from OPENAI Default
+
+python -m spinup.run ppo --exp_name LunarLander51 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4000 --epochs 50 --pi_lr 0.0002 --max_ep_len 1000 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+
+#Experiment 50
+#changed max_ep_len 500 750 1250 1500 2000
+
+python -m spinup.run ppo --exp_name LunarLander52 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4000 --epochs 50 --pi_lr 0.0002 --max_ep_len 500 750 1250 1500 2000 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#taking v long af
+#500 linear increase to 100 -stable
+#750 Worst Yet Horrible
+#1250 Linear increase up to 200 and then back down
+#1500 ntg
+#2000 Linear Line peak at 200 V GOOD
+#New Default max_ep_len = 
+
+
+
+#Deep Deterministic Policy Gradient
+
+#Experiment 51
+#Enter DDPG Defaults for LunarLadaer-v2
+
+python -m spinup.run ddpg --exp_name LunarLander53 --env LunarLander-v2 --gamma 0.999 --pi_lr 0.0001 --q_lr 0.0001 --batch_size 100 --epochs 100 --start_steps 1000 --max_ep_len 1000 --act_noise1 --polyak 0.995 --data_dir /Users/brianhaney/Desktop/MoonLander/DDPGExperiments --dt
+
+#Error
+#Tylp --act_noise1 not --act_noise 1
+#Retry
+
+#Experiment 51
+#Enter DDPG Defaults for LunarLadaer-v2
+python -m spinup.run ddpg --exp_name LunarLander53 --env LunarLander-v2 --gamma 0.999 --pi_lr 0.0001 --q_lr 0.0001 --batch_size 100 --epochs 100 --start_steps 1000 --max_ep_len 1000 --act_noise 1 --polyak 0.995 --data_dir /Users/brianhaney/Desktop/MoonLander/DDPGExperiments --dt
+
+#Error
+#returned non-zero exit status 1.
+#Retry
+
+#Experiment 52
+#remove /DDPGExperiments to make path less complex - Manually Move Files
+#Add --hid
+
+python -m spinup.run ddpg --exp_name LunarLander53 --env LunarLander-v2 --hid "[128,64]" --gamma 0.999 --pi_lr 0.0001 --q_lr 0.0001 --batch_size 100 --epochs 100 --start_steps 1000 --max_ep_len 1000 --act_noise 1 --polyak 0.995 --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Error
+
+#Experiment 53
+# remove 
+#--epochs 100 --start_steps 10000 --gamma 0.999 --pi_lr 0.0001 --q_lr 0.0001 --batch_size 100 --max_ep_len 1000 --act_noise 1 --polyak 0.995
+
+python -m spinup.run ddpg --exp_name LunarLander53 --env LunarLander-v2  --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Error
+
+#Experiment 54
+#change ddpg to sac
+
+python -m spinup.run sac --exp_name LunarLander53 --env LunarLander-v2  --data_dir /Users/brianhaney/Desktop/MoonLander --dt
+
+#Error IndexError: tuple index out of range
+#Gave up on other algos
+#Return PPO 
+
+#Experiment 55
+#
+
+python -m spinup.run ppo --exp_name LunarLander54 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 3750 --epochs 50 --max_ep_len 2000 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#
+
+#Experiment 56
+#target_kl = 0.02 + step_per_epoch =2000
+
+python -m spinup.run ppo --exp_name LunarLander55 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --target_kl 0.02 --vf_lr 0.0024 --seed 20 --steps_per_epoch 2000 --epochs 50 --max_ep_len 2000 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#ntg
+
+#Experiment 57
+
+python -m spinup.run ppo --exp_name LunarLander56 --env LunarLander-v2 --clip_ratio 0.2 --hid "[128,64]" --gamma 0.999 --vf_lr 0.0024 --seed 20 --steps_per_epoch 4000 --epochs 50 --max_ep_len 2000 --pi_lr 0.0002 --data_dir /Users/brianhaney/Desktop/MoonLander/Experiments --dt
+
+#python -m spinup.run plot /Users/brianhaney/Desktop/MoonLander/Experiments/2018-11-23_LunarLander56/2018-11-23_17-44-31-LunarLander56_s20
+
+
 
 
