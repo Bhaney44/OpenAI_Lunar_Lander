@@ -1,0 +1,43 @@
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            128,
+            64
+        ]
+    },
+    "actor_critic":	"mlp_actor_critic",
+    "clip_ratio":	0.2,
+    "env_fn":	"<function call_experiment.<locals>.thunk_plus.<locals>.<lambda> at 0x10ab67ae8>",
+    "epochs":	50,
+    "exp_name":	"LunarLander43",
+    "gamma":	0.999,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x10ab72d68>":	{
+            "epoch_dict":	{},
+            "exp_name":	"LunarLander43",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/Users/brianhaney/Desktop/MoonLander/Experiments/2018-11-22_LunarLander43/2018-11-22_15-00-31-LunarLander43_s20",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/Users/brianhaney/Desktop/MoonLander/Experiments/2018-11-22_LunarLander43/2018-11-22_15-00-31-LunarLander43_s20/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"LunarLander43",
+        "output_dir":	"/Users/brianhaney/Desktop/MoonLander/Experiments/2018-11-22_LunarLander43/2018-11-22_15-00-31-LunarLander43_s20"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	0.0002,
+    "save_freq":	10,
+    "seed":	20,
+    "steps_per_epoch":	4000,
+    "target_kl":	0.01,
+    "train_pi_iters":	80,
+    "train_v_iters":	80,
+    "vf_lr":	0.0024
+}
