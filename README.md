@@ -9,8 +9,10 @@ The Solved folder includes my writeup and information regarding an algorithm sol
 <img width="564" alt="Screenshot 2024-12-12 at 12 14 34 AM" src="https://github.com/user-attachments/assets/ca151a59-7883-4acf-b1af-2d8b1a84e5b9" />
 
 
-Some scholarly articles on Deep Reinforcement Learning technology:
+Some scholarly articles I've written on Deep Reinforcement Learning technology:
 
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3570254
+[Reinforcement Learning Patents: A Transatlantic Review](https://law.stanford.edu/publications/no-63-reinforcement-learning-patents-a-transatlantic-review/)
 
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3527154
+[Deep Reinforcement Learning Patents: An Empirical Survey](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3570254)
+
+
