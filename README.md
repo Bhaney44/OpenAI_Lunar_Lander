@@ -6,11 +6,11 @@ The Solved folder includes my writeup and information regarding an algorithm sol
 
 <img width="728" alt="Screenshot 2024-12-12 at 12 14 09 AM" src="https://github.com/user-attachments/assets/69bbe0bd-ce0b-4b9d-8d43-391029e21a1c" />
 
-Lunar Lander Simulation
+  _Lunar Lander Simulation_
 
 <img width="564" alt="Screenshot 2024-12-12 at 12 14 34 AM" src="https://github.com/user-attachments/assets/ca151a59-7883-4acf-b1af-2d8b1a84e5b9" />
 
-Lunar Lander Simulation Data
+  _Lunar Lander Simulation Data_
 
 
 **Scholarly articles I've written on Deep Reinforcement Learning technology.**
