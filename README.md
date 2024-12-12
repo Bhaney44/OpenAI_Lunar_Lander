@@ -1,4 +1,4 @@
-# OpenAI_Lunar_Lander
+# OpenAI Lunar Lander
 This repository contains information relating to experiments on algorithm performance in the OpenAI gym LunarLander-v2 environment. The experiments test and record the performance of various differentiations for deep reinforcement learning algorithms.
 
 The Solved folder includes my writeup and information regarding an algorithm solving OpenAI's LunarLander-v2 enviornment. The Figure section contains graphs of performance metrics for algorithms with variations in performance and structure. I wrote a [complete guide](https://medium.com/@brian.s.haney44/installing-spinningup-for-mac-os-x-9d5e24dc565a) for how to install the LunarLander and LunarLanderContinuous enviornments. I also wrote a more general guide on [reinforcement learning](https://medium.com/@brian.s.haney44/reinforcement-learning-5d578a0de1ff). I also posted a video of the [optimized algorithm for the lunar lander](https://www.youtube.com/watch?v=5_f66jrAWiM).
